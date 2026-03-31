@@ -10,3 +10,9 @@
 /httpRequests/
 # Pasta de saída do IntelliJ
 /out/
+/.idea/
+/target/
+*.iml
+# Arquivos de ambiente
+.env
+.env.*
