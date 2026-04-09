@@ -13,7 +13,5 @@ public class RepositorioTest01 {
         repositorio.salvar();
         repositorio2.salvar();
         repositorio3.salvar();
-
-        
     }
 }
