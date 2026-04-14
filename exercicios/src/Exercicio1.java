@@ -11,9 +11,9 @@ public class Exercicio1 {
         int c = sc.nextInt();
 
         int soma = a + b;
-        System.out.println("O valor da soma de A + B é "+soma);
-        System.out.println("O valor de C é "+ c + " .Portanto nesse caso");
-        if (soma < c){
+        System.out.println("O valor da soma de A + B é " + soma);
+        System.out.println("O valor de C é " + c + ". Portanto nesse caso");
+        if (soma < c) {
             System.out.println("o valor da soma de A+B é menor que C");
         } else if (soma == c) {
             System.out.println("o valor da soma de A+B é igual a C");
