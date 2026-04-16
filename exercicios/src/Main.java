@@ -1,8 +1,4 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-
 import java.util.Scanner;
-
 /**
  * Lista de exercícios para treino de lógica de programação em Java.
  * <p>
@@ -85,9 +81,23 @@ import java.util.Scanner;
      */
 
 public class Main {
+
+    private static boolean desejaRepetir(Scanner sc) {
+        System.out.print("\nDeseja executar novamente este exercício? (s/n): ");
+        String resposta = sc.next().trim().toLowerCase();
+        return resposta.equals("s");
+    }
+
+    private static void executarComRepeticao(Runnable exercicio, Scanner sc) {
+        do {
+            exercicio.run();
+        } while (desejaRepetir(sc));
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int opcao;
+
         do {
             System.out.println("\n=== MENU DE EXERCÍCIOS ===");
             System.out.println("1 - Soma A + B e comparação com C");
@@ -95,57 +105,60 @@ public class Main {
             System.out.println("3 - Soma ou multiplicação de A e B");
             System.out.println("4 - Antecessor e sucessor");
             System.out.println("5 - Quantos salários mínimos");
-            System.out.println("6 - ");
-            System.out.println("7 - ");
-            System.out.println("8 - ");
-            System.out.println("9 - ");
-            System.out.println("10 - ");
-            System.out.println("11 - ");
-            System.out.println("12 - ");
-            System.out.println("13 - ");
-            System.out.println("14 - ");
-            System.out.println("15 - ");
-            System.out.println("16 - ");
-            System.out.println("17 - ");
-            System.out.println("18 - ");
-            System.out.println("19 - ");
-            System.out.println("20 - ");
-            System.out.println("21 - ");
-            System.out.println("22 - ");
-            System.out.println("23 - ");
-            System.out.println("24 - ");
+            System.out.println("6 - reajuste de 5%");
+            System.out.println("7 - Valores booleanos");
+            System.out.println("8 - Ordem decrescente");
+            System.out.println("9 - IMC");
+            System.out.println("10 - Média das notas ");
+            System.out.println("11 - Média de 4 notas e aprovação");
+            System.out.println("12 - Pagamento");
+            System.out.println("13 - Maior ou menor de idade");
+            System.out.println("14 - Troca de valores");
+            System.out.println("15 - Tempo vivido");
+            System.out.println("16 - Lados triângulos");
+            System.out.println("17 - Temperatura F para C");
+            System.out.println("18 - Francisco e Sara");
+            System.out.println("19 - Tabuada de 1 até 10");
+            System.out.println("20 - Tabuada algoritmo escolhido");
+            System.out.println("21 - Valor aleatório");
+            System.out.println("22 - Quociente e resto");
+            System.out.println("23 - Calculo salario liquido professor");
+            System.out.println("24 - Calculo de viagem");
             System.out.println("0 - Sair");
             System.out.print("Escolha o exercício: ");
+
             opcao = sc.nextInt();
 
             switch (opcao) {
-                case 1 -> Exercicio1.executar(sc);
-                case 2 -> Exercicio2.executar(sc);
-                case 3 -> Exercicio3.executar(sc);
-                case 4 -> Exercicio4.executar(sc);
-                case 5 -> Exercicio5.executar(sc);
-                case 6 -> Exercicio6.executar(sc);
-                case 7 -> Exercicio7.executar(sc);
-                case 8 -> Exercicio8.executar(sc);
-                case 9 -> Exercicio9.executar(sc);
-                case 10 -> Exercicio10.executar(sc);
-                case 11 -> Exercicio11.executar(sc);
-                case 12 -> Exercicio12.executar(sc);
-                case 13 -> Exercicio13.executar(sc);
-                case 14 -> Exercicio14.executar(sc);
-                case 15 -> Exercicio15.executar(sc);
-                case 16 -> Exercicio16.executar(sc);
-                case 17 -> Exercicio17.executar(sc);
-                case 18 -> Exercicio18.executar(sc);
-                case 19 -> Exercicio19.executar(sc);
-                case 20 -> Exercicio20.executar(sc);
-                case 21 -> Exercicio21.executar(sc);
-                case 22 -> Exercicio22.executar(sc);
-                case 23 -> Exercicio23.executar(sc);
-                case 24 -> Exercicio24.executar(sc);
+                case 1 -> executarComRepeticao(() -> Exercicio1.executar(sc), sc);
+                case 2 -> executarComRepeticao(() -> Exercicio2.executar(sc), sc);
+                case 3 -> executarComRepeticao(() -> Exercicio3.executar(sc), sc);
+                case 4 -> executarComRepeticao(() -> Exercicio4.executar(sc), sc);
+                case 5 -> executarComRepeticao(() -> Exercicio5.executar(sc), sc);
+                case 6 -> executarComRepeticao(() -> Exercicio6.executar(sc), sc);
+                case 7 -> executarComRepeticao(() -> Exercicio7.executar(sc), sc);
+                case 8 -> executarComRepeticao(() -> Exercicio8.executar(sc), sc);
+                case 9 -> executarComRepeticao(() -> Exercicio9.executar(sc), sc);
+                case 10 -> executarComRepeticao(() -> Exercicio10.executar(sc), sc);
+                case 11 -> executarComRepeticao(() -> Exercicio11.executar(sc), sc);
+                case 12 -> executarComRepeticao(() -> Exercicio12.executar(sc), sc);
+                case 13 -> executarComRepeticao(() -> Exercicio13.executar(sc), sc);
+                case 14 -> executarComRepeticao(() -> Exercicio14.executar(sc), sc);
+                case 15 -> executarComRepeticao(() -> Exercicio15.executar(sc), sc);
+                case 16 -> executarComRepeticao(() -> Exercicio16.executar(sc), sc);
+                case 17 -> executarComRepeticao(() -> Exercicio17.executar(sc), sc);
+                case 18 -> executarComRepeticao(() -> Exercicio18.executar(sc), sc);
+                case 19 -> executarComRepeticao(Exercicio19::executar, sc);
+                case 20 -> executarComRepeticao(() -> Exercicio20.executar(sc), sc);
+                case 21 -> executarComRepeticao(() -> Exercicio21.executar(sc), sc);
+                case 22 -> executarComRepeticao(() -> Exercicio22.executar(sc), sc);
+                case 23 -> executarComRepeticao(() -> Exercicio23.executar(sc), sc);
+                case 24 -> executarComRepeticao(() -> Exercicio24.executar(sc), sc);
+
                 case 0 -> System.out.println("Encerrando...");
                 default -> System.out.println("Opção inválida!");
             }
+
         } while (opcao != 0);
 
         sc.close();

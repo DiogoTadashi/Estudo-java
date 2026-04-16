@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
 public class Exercicio11 {
-    //11 - Faça um algoritmo que leia quatro notas obtidas por um aluno, calcule a média das notas obtidas, imprima na tela o nome do aluno e se o aluno foi aprovado ou reprovado. Para o aluno ser considerado aprovado a sua média final deve ser maior ou igual a 7.
+    //11 - Faça um algoritmo que leia quatro notas obtidas por um aluno, calcule a média das notas obtidas, imprima na
+    // tela o nome do aluno e se o aluno foi aprovado ou reprovado. Para o aluno ser considerado aprovado a sua média
+    // final deve ser maior ou igual a 7.
     public static void executar(Scanner sc) {
         System.out.println("Digite seu nome: )");
         String nome = sc.nextLine();
