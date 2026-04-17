@@ -81,7 +81,6 @@ import java.util.Scanner;
      */
 
 public class Main {
-
     private static boolean desejaRepetir(Scanner sc) {
         System.out.print("\nDeseja executar novamente este exercício? (s/n): ");
         String resposta = sc.next().trim().toLowerCase();
