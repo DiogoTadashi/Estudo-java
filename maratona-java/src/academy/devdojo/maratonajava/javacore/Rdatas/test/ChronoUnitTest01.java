@@ -6,7 +6,7 @@ import java.time.temporal.ChronoUnit;
 
 public class ChronoUnitTest01 {
     public static void main(String[] args) {
-        LocalDateTime aniversario = LocalDateTime.of(2004, Month.APRIL, 3, 22,12,34);
+        LocalDateTime aniversario = LocalDateTime.of(2004, Month.APRIL, 3, 22, 12, 34);
         LocalDateTime now = LocalDateTime.now();
         System.out.println(ChronoUnit.DAYS.between(aniversario, now));
         System.out.println(ChronoUnit.WEEKS.between(aniversario, now));

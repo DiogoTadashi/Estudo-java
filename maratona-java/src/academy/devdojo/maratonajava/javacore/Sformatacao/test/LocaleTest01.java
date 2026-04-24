@@ -22,12 +22,12 @@ public class LocaleTest01 {
         DateFormat df5 = DateFormat.getDateInstance(DateFormat.FULL, localeJapao);
         DateFormat df6 = DateFormat.getDateInstance(DateFormat.FULL, localeChina);
 
-        System.out.println("Brasil "+df1.format(calender.getTime()));
-        System.out.println("Italia "+df2.format(calender.getTime()));
-        System.out.println("França "+df3.format(calender.getTime()));
-        System.out.println("India "+df4.format(calender.getTime()));
-        System.out.println("Japão "+df5.format(calender.getTime()));
-        System.out.println("China "+df6.format(calender.getTime()));
+        System.out.println("Brasil " + df1.format(calender.getTime()));
+        System.out.println("Italia " + df2.format(calender.getTime()));
+        System.out.println("França " + df3.format(calender.getTime()));
+        System.out.println("India " + df4.format(calender.getTime()));
+        System.out.println("Japão " + df5.format(calender.getTime()));
+        System.out.println("China " + df6.format(calender.getTime()));
 
         System.out.println("--------------------");
 

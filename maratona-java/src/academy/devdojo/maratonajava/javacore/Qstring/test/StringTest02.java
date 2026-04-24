@@ -6,11 +6,11 @@ public class StringTest02 {
         String num = "012345";
         System.out.println(nome.charAt(0));
         System.out.println(nome.length());
-        System.out.println(nome.replace("f","l"));
+        System.out.println(nome.replace("f", "l"));
         System.out.println(nome.toLowerCase());
         System.out.println(nome.toUpperCase());
         System.out.println(num.length());
-        System.out.println(num.substring(2,num.length()-1));
+        System.out.println(num.substring(2, num.length() - 1));
         System.out.println(nome.trim());
     }
 }

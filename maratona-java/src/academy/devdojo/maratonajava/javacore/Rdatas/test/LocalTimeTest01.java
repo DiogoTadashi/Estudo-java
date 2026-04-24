@@ -5,7 +5,7 @@ import java.time.temporal.ChronoField;
 
 public class LocalTimeTest01 {
     public static void main(String[] args) {
-        LocalTime time = LocalTime.of(11,12,04);
+        LocalTime time = LocalTime.of(11, 12, 04);
         LocalTime timeNow = LocalTime.now();
         System.out.println(time);
         System.out.println(timeNow);

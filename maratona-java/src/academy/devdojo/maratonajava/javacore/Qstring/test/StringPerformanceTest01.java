@@ -15,9 +15,9 @@ public class StringPerformanceTest01 {
         long fim3 = System.currentTimeMillis();
 
 
-        System.out.println("Tempo gasto para String "+ (fim - inicio) + "ms");
-        System.out.println("Tempo gasto para StringBuilder "+ (fim2 - inicio2) + "ms");
-        System.out.println("Tempo gasto para StringBuffer "+ (fim3 - inicio3) + "ms");
+        System.out.println("Tempo gasto para String " + (fim - inicio) + "ms");
+        System.out.println("Tempo gasto para StringBuilder " + (fim2 - inicio2) + "ms");
+        System.out.println("Tempo gasto para StringBuffer " + (fim3 - inicio3) + "ms");
     }
 
     public static void concatString(int tamanho) {

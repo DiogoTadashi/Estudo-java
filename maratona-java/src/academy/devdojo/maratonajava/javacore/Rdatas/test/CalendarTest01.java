@@ -6,7 +6,7 @@ import java.util.Date;
 public class CalendarTest01 {
     public static void main(String[] args) {
         Calendar c = Calendar.getInstance();
-        if(c.getFirstDayOfWeek() == Calendar.SUNDAY){
+        if (c.getFirstDayOfWeek() == Calendar.SUNDAY) {
             System.out.println("Sunday is the first day of the week");
         }
         System.out.println(c.get(Calendar.DAY_OF_WEEK));
