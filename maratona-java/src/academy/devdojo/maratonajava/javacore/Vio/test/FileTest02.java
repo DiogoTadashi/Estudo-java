@@ -8,6 +8,7 @@ public class FileTest02 {
         File fileDiretorio = new File("pasta");
         boolean isDiretorioCreated = fileDiretorio.mkdir();
         System.out.println("Pasta criada? "+ isDiretorioCreated);
+        
         File fileArquivoDiretorio = new File(fileDiretorio,"arquivo.txt");
         boolean isFileCreated = fileArquivoDiretorio.createNewFile();
         System.out.println("arquivo.txt criado? "+isFileCreated);
