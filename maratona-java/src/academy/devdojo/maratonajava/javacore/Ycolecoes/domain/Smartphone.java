@@ -1,8 +1,8 @@
 package academy.devdojo.maratonajava.javacore.Ycolecoes.domain;
 
 public class Smartphone {
-    private final String serialNumber;
-    private final String marca;
+    private String serialNumber;
+    private String marca;
 
     public Smartphone(String serialNumber, String marca) {
         this.serialNumber = serialNumber;
@@ -30,5 +30,29 @@ public class Smartphone {
     @Override
     public int hashCode() {
         return serialNumber == null ? 0 : this.serialNumber.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "Smartphone{" +
+                "serialNumber='" + serialNumber + '\'' +
+                ", marca='" + marca + '\'' +
+                '}';
+    }
+
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
     }
 }
