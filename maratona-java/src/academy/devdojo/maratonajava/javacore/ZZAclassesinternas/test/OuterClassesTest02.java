@@ -13,6 +13,8 @@ public class OuterClassesTest02 {
                 System.out.println(name + " " + lastName);
             }
         }
+        //LocalClass localClass = new LocalClass();
+        //localClass().printLocal();
         new LocalClass().printLocal();
     }
 

@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Zgenerics.service;
 
-import academy.devdojo.maratonajava.javacore.Zgenerics.dominio.Carro;
+import academy.devdojo.maratonajava.javacore.Zgenerics.domain.Carro;
 
 import java.util.List;
 
