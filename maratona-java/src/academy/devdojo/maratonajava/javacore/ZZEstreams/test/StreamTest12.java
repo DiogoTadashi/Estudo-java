@@ -20,6 +20,7 @@ public class StreamTest12 {
             new LightNovel("Kumo desuga", 1.99, Category.FANTASY),
             new LightNovel("Monogatari", 4.00, Category.ROMANCE)
     ));
+
     public static void main(String[] args) {
         Map<Category, List<LightNovel>> categoryLightNovelMap = new HashMap<>();
         List<LightNovel> fantasy = new ArrayList<>();

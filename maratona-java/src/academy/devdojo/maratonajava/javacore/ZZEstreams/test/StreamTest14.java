@@ -2,15 +2,12 @@ package academy.devdojo.maratonajava.javacore.ZZEstreams.test;
 
 import academy.devdojo.maratonajava.javacore.ZZEstreams.domain.Category;
 import academy.devdojo.maratonajava.javacore.ZZEstreams.domain.LightNovel;
-import academy.devdojo.maratonajava.javacore.ZZEstreams.domain.Promotion;
 
 import java.util.*;
 import java.util.function.BinaryOperator;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-import static academy.devdojo.maratonajava.javacore.ZZEstreams.domain.Promotion.NORMAL_PRICE;
-import static academy.devdojo.maratonajava.javacore.ZZEstreams.domain.Promotion.UNDER_PROMOTION;
 import static java.util.stream.Collectors.groupingBy;
 
 public class StreamTest14 {

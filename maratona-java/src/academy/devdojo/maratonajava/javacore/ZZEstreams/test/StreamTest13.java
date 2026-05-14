@@ -31,12 +31,27 @@ public class StreamTest13 {
                 .collect(groupingBy(ln -> ln.getPrice() < 6 ? UNDER_PROMOTION : NORMAL_PRICE
                 ));
         System.out.println(collect);
+
+        Map<Promotion, List<LightNovel>> collect1 = lightNovels
+                .stream()
+                .collect(groupingBy(StreamTest13::getPromotion
+                ));
+        System.out.println(collect1);
         // Map<Category, Map<Promotion, List<LightNovel>>>
 
-        Map<Category, Map<Promotion, List<LightNovel>>> collect1 = lightNovels
+        Map<Category, Map<Promotion, List<LightNovel>>> collect2 = lightNovels
                 .stream()
                 .collect(groupingBy(LightNovel::getCategory, groupingBy(ln -> ln.getPrice() < 6 ? UNDER_PROMOTION : NORMAL_PRICE
                         )));
-        System.out.println(collect1);
+        System.out.println(collect2);
+
+        Map<Category, Map<Promotion, List<LightNovel>>> collect3 = lightNovels
+                .stream()
+                .collect(groupingBy(LightNovel::getCategory, groupingBy(StreamTest13::getPromotion)));
+        System.out.println(collect3);
+    }
+
+    private static Promotion getPromotion(LightNovel ln) {
+        return ln.getPrice() < 6 ? UNDER_PROMOTION : NORMAL_PRICE;
     }
 }
